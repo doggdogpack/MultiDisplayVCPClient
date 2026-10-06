@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "com.multidisplayvcp.client",
+  "name": "Multi-Display VCP Client",
+  "version": "3.0.0",
+  "description": "Control monitor VCP settings (brightness, input, etc.) over your local network using Macro Deck.",
+  "icon": "icon.png",
+  "repository": "https://github.com/dog199200/MultiDisplayVCPClient",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/MultiDisplayVCPClient.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/MultiDisplayVCPClient.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-x64": {
+      "executable": "runtimes/osx-x64/MultiDisplayVCPClient.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "linux-x64": {
+      "executable": "runtimes/linux-x64/MultiDisplayVCPClient.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "DoggoDogPack"
+  },
+  "license": "MIT",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-0"
+  }
+}

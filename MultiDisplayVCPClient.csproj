@@ -1,157 +1,40 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-
-    <TargetFramework>net8.0-windows</TargetFramework>
-
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-
     <Nullable>enable</Nullable>
-
-    <UseWindowsForms>true</UseWindowsForms>
-
-
-
-
-
     <Authors>DoggoDogPack</Authors>
-
-    <Version>1.1.0</Version>
-
+    <Version>3.0.0</Version>
     <PackageId>DoggoDogPack.MultiDisplayVCPClient</PackageId>
-
     <RepositoryUrl>https://github.com/dog199200/MultiDisplayVCPClient</RepositoryUrl>
-
     <Product>Multi-Display VCP Client</Product>
-
     <AssemblyName>MultiDisplayVCPClient</AssemblyName>
-
-
-
-    <PluginApiVersion>40</PluginApiVersion>
-
-    <MacroDeckVersion>2.14.1</MacroDeckVersion>
-
+    <RootNamespace>MultiDisplayVCPClient</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-
-
-
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
   <ItemGroup>
-
-    <Reference Include="Macro Deck 2" Private="false">
-
-      <HintPath>C:\Program Files\Macro Deck\Macro Deck 2.dll</HintPath>
-
-    </Reference>
-
+    <PackageReference Include="MacroDeck.Plugin.Analyzers" Version="3.0.0-beta.15" PrivateAssets="all" />
+    <PackageReference Include="MacroDeck.Localization" Version="3.0.0-beta.15" />
+    <PackageReference Include="MacroDeck.Plugin.Hosting" Version="3.0.0-beta.15" />
+    <PackageReference Include="MacroDeck.Plugin.Serilog" Version="3.0.0-beta.15" />
+    <PackageReference Include="MacroDeck.Sdk" Version="3.0.0-beta.15" />
+    <PackageReference Include="MagicOnion.Client" Version="7.11.0" />
+    <PackageReference Include="MemoryPack" Version="1.21.4" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.71.0" />
   </ItemGroup>
 
 
 
   <ItemGroup>
-
-    <Content Include="ExtensionManifest.json">
-
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-
-    </Content>
-
-
-
-    <Content Include="ExtensionIcon.png">
-
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-
-    </Content>
-
+    <Content Include="manifest.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="icon.png" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
-
-
-
-  <ItemGroup>
-
-    <Compile Update="Properties\Resources.Designer.cs">
-
-      <DesignTime>True</DesignTime>
-
-      <AutoGen>True</AutoGen>
-
-      <DependentUpon>Resources.resx</DependentUpon>
-
-    </Compile>
-
-  </ItemGroup>
-
-
-
-  <ItemGroup>
-
-    <EmbeddedResource Update="Properties\Resources.resx">
-
-      <Generator>ResXFileCodeGenerator</Generator>
-
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-
-    </EmbeddedResource>
-
-  </ItemGroup>
-
-
-
-  <Target Name="GenerateManifest" BeforeTargets="BeforeBuild">
-
-    <PropertyGroup>
-
-      <ManifestContent>
-        {
-
-        "type": "Plugin",
-
-        "name": "$(Product)",
-
-        "author": "$(Authors)",
-
-        "repository": "$(RepositoryUrl)",
-
-        "packageId": "$(PackageId)",
-
-        "version": "$(Version)",
-
-        "target-plugin-api-version": $(PluginApiVersion),
-
-        "target-macro-deck-version": "$(MacroDeckVersion)",
-
-        "dll": "$(AssemblyName).dll"
-
-        }
-      </ManifestContent>
-
-      <ManifestPath>$(MSBuildProjectDirectory)\ExtensionManifest.json</ManifestPath>
-
-    </PropertyGroup>
-
-
-
-    <WriteLinesToFile
-
-      File="$(ManifestPath)"
-
-      Lines="$(ManifestContent)"
-
-      Overwrite="true"
-
-      Encoding="UTF-8" />
-
-
-
-    <Message Text="Generated ExtensionManifest.json with version $(Version)" Importance="high" />
-
-  </Target>
-
-
 
 </Project>

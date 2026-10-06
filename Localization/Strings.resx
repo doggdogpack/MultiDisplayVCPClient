@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions.SetVcp.Name" xml:space="preserve">
+    <value>Set VCP Value</value>
+  </data>
+  <data name="Actions.SetVcp.Description" xml:space="preserve">
+    <value>Sets a VCP feature value (e.g., Brightness, Input) on a monitor.</value>
+  </data>
+  <data name="Actions.SetVcp.Connection.Label" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="Actions.SetVcp.Connection.Description" xml:space="preserve">
+    <value>The name of the VCP server connection.</value>
+  </data>
+  <data name="Actions.SetVcp.Connection.Placeholder" xml:space="preserve">
+    <value>Select a connection...</value>
+  </data>
+  <data name="Actions.SetVcp.Monitor.Label" xml:space="preserve">
+    <value>Monitor PnP ID</value>
+  </data>
+  <data name="Actions.SetVcp.Monitor.Description" xml:space="preserve">
+    <value>Target monitor PnP ID (e.g., ACR0D1D).</value>
+  </data>
+  <data name="Actions.SetVcp.Monitor.Placeholder" xml:space="preserve">
+    <value>Select a monitor...</value>
+  </data>
+  <data name="Actions.SetVcp.VcpCode.Label" xml:space="preserve">
+    <value>VCP Code</value>
+  </data>
+  <data name="Actions.SetVcp.VcpCode.Description" xml:space="preserve">
+    <value>VCP feature code as hex or decimal (e.g., 0x10 or 16 for Brightness).</value>
+  </data>
+  <data name="Actions.SetVcp.VcpCode.Placeholder" xml:space="preserve">
+    <value>Select a VCP feature code...</value>
+  </data>
+  <data name="Actions.SetVcp.Value.Label" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Actions.SetVcp.Value.Description" xml:space="preserve">
+    <value>The value to set the feature to.</value>
+  </data>
+  <data name="Setup.ConnectionTitle" xml:space="preserve">
+    <value>VCP Server Connection</value>
+  </data>
+  <data name="Setup.ConnectionDescription" xml:space="preserve">
+    <value>Enter the hostname/IP, gRPC port, and password for your MultiDisplayVCP server.</value>
+  </data>
+  <data name="Setup.Name" xml:space="preserve">
+    <value>Server Name</value>
+  </data>
+  <data name="Setup.Host" xml:space="preserve">
+    <value>Host / IP Address</value>
+  </data>
+  <data name="Setup.Port" xml:space="preserve">
+    <value>gRPC Port</value>
+  </data>
+  <data name="Setup.Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Setup.CannotConnect" xml:space="preserve">
+    <value>Could not connect to the VCP server. Please verify the host, port, and password.</value>
+  </data>
+</root>

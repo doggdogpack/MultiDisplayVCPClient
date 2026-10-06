@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <!-- When built within the MultiDisplayVCP mono-repo, redirect to BuildOut\Client to keep Source clean -->
+    <BaseOutputPath Condition="Exists('$(MSBuildThisFileDirectory)..\..\BuildOut')">$(MSBuildThisFileDirectory)..\..\BuildOut\Client\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath Condition="Exists('$(MSBuildThisFileDirectory)..\..\BuildOut')">$(MSBuildThisFileDirectory)..\..\BuildOut\Client\obj\</BaseIntermediateOutputPath>
+
+    <!-- Ensure trailing slashes for MSBuild safety when redirected -->
+    <OutputPath Condition="'$(BaseOutputPath)' != ''">$(BaseOutputPath)$(Configuration)\</OutputPath>
+    <IntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)' != ''">$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>
