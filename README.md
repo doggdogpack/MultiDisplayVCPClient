@@ -1,3 +1,33 @@
-Important Notes - This version is specifically for Macro Deck 2 and will not work for Macro Deck 3. Please use version 3+ for Macro Deck 3.
+# Multi-Display VCP Client (Macro Deck 2 Legacy)
 
-This is not a standalone plugin. This is an extension plugin for Macro Deck (https://macro-deck.app). It acts as an end-to-end extension with the Multi-Display VCP Server (https://github.com/dog199200/MultiDisplayVCPServer) allowing you to get and control settings from Monitors/Displays on any computer in the network running the server.
+> [!WARNING]
+> **Macro Deck 2 Only — Legacy Release**  
+> This branch (`Macro-Deck-2`) contains the legacy plugin built specifically for **Macro Deck 2** (API v40 / Macro Deck 2.14.x) and **will not work on Macro Deck 3**.  
+> If you are using **Macro Deck 3**, please switch to the **[`Macro-Deck-3` branch](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3)** and download release **v3.0.0+**.
+
+> [!IMPORTANT]
+> **Not a Standalone Application**  
+> This is an extension plugin for **[Macro Deck 2](https://macro-deck.app/)**. It acts as an end-to-end extension with the **[MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer)** (v1.x), allowing you to query and control monitor hardware DDC/CI settings (Brightness, Contrast, Input Source, and more) across your local network.
+
+---
+
+## 🖥️ Compatibility
+
+- **Macro Deck**: Macro Deck 2.14.x (Plugin API v40).
+- **Server**: Compatible with MultiDisplayVCP Server v1.x (TCP socket protocol).
+- **Target OS**: Windows (.NET runtime).
+
+---
+
+## 🗂️ Branches & Upgrading
+
+| Branch | Macro Deck Version | Server Compatibility | Status |
+| :--- | :--- | :--- | :--- |
+| [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) | **Macro Deck 2.x** | MultiDisplayVCP Server v1.x | **Archived / Legacy** |
+| [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) | **Macro Deck 3.x** | MultiDisplayVCP Server v2.0+ (Windows, Linux, macOS) | **Active (Current)** |
+
+---
+
+## 📄 License
+
+MIT License. See [LICENSE.txt](LICENSE.txt) for details.

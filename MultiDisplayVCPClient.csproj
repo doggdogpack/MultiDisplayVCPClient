@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 
 
@@ -22,7 +22,7 @@
 
     <PackageId>DoggoDogPack.MultiDisplayVCPClient</PackageId>
 
-    <RepositoryUrl>https://github.com/dog199200/MultiDisplayVCPClient</RepositoryUrl>
+    <RepositoryUrl>https://github.com/doggdogpack/MultiDisplayVCPClient</RepositoryUrl>
 
     <Product>Multi-Display VCP Client</Product>
 

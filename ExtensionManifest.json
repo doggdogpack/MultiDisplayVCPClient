@@ -1,4 +1,4 @@
-﻿{
+{
 
         "type": "Plugin",
 
@@ -6,7 +6,7 @@
 
         "author": "DoggoDogPack",
 
-        "repository": "https://github.com/dog199200/MultiDisplayVCPClient",
+        "repository": "https://github.com/doggdogpack/MultiDisplayVCPClient",
 
         "packageId": "DoggoDogPack.MultiDisplayVCPClient",
 
