@@ -6,7 +6,7 @@
   "version": "3.0.0",
   "description": "Control monitor VCP settings (brightness, input, etc.) over your local network using Macro Deck.",
   "icon": "icon.png",
-  "repository": "https://github.com/dog199200/MultiDisplayVCPClient",
+  "repository": "https://github.com/doggdogpack/MultiDisplayVCPClient",
   "entrypoints": {
     "win-x64": {
       "executable": "runtimes/win-x64/MultiDisplayVCPClient.dll",

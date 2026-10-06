@@ -1,40 +1,58 @@
-# Multi-Display VCP Client for Macro Deck 3
+# MultiDisplayVCP Client for Macro Deck 3
 
-Control your monitors' hardware VCP features (Brightness, Contrast, Input Source, Audio Volume, Power Mode, and more) across your network using [Macro Deck 3](https://macro-deck.app/).
+Control your monitors' hardware DDC/CI settings (Brightness, Contrast, Input Source, Audio Volume, Power Mode, and more) across your local network directly from [Macro Deck 3](https://macro-deck.app/).
 
-## Overview
+> [!IMPORTANT]
+> **Not a Standalone Application**  
+> This is an extension plugin for **[Macro Deck 3](https://macro-deck.app/)**. It works end-to-end with the **[MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer)** (running on any Windows, Linux, or macOS computer on your local network) to query and control monitor/display hardware settings remotely.
 
-This plugin connects Macro Deck 3 to one or more [MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer) instances running on your desktop PCs (Windows, Linux, macOS).
+---
 
-## Features
+## 🌟 Key Features
 
-- **Multi-Server & Multi-Monitor Support**: Manage multiple displays across multiple host machines seamlessly.
-- **Dynamic Variable Catalog**: Automatically registers reactive Macro Deck integration variables for every monitor and supported VCP feature (`vars.multidisplay_<connection>_<monitor>_<feature>`).
-- **High-Performance Communication**: Uses MagicOnion gRPC over HTTP/2 with automatic fallback to legacy TCP.
-- **HMAC-SHA256 Authentication**: Secure sliding-window challenge authentication.
-- **Cross-Platform**: Universal plugin supporting Windows (x64), Linux (x64), and macOS (Apple Silicon & Intel).
-- **Mobile Control Surface**: Stream live monitor states and trigger actions directly from iOS and Android devices running the Macro Deck mobile client.
+- **Cross-Platform Host Support**: Connects to [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) instances running on Windows, Linux, or macOS.
+- **Universal Macro Deck 3 Plugin**: A single package with native binaries for Windows (`win-x64`), Linux (`linux-x64`), and macOS (`osx-arm64` & `osx-x64`).
+- **Dynamic Variable Catalog**: Automatically registers reactive Macro Deck variables for every monitor and supported VCP feature (`vars.multidisplay_<connection>_<monitor>_<feature>`).
+- **High-Performance Dual Networking**:
+  - **MagicOnion / gRPC (HTTP/2)**: Fast, zero-allocation protocol.
+  - **TCP Fallback**: Seamless fallback to standard TCP sockets for network flexibility.
+- **HMAC-SHA256 Authentication**: Challenge-based security with replay-attack protection.
+- **Mobile Control Surface**: Stream live monitor states and control displays from your phone or tablet running the Macro Deck mobile app (iOS / Android).
 
-## Installation
+---
 
-1. Open Macro Deck 3.
-2. Go to the **Extension Store** or install from file:
-   - File: `com.multidisplayvcp.client-3.0.0.macroDeckPlugin`
-3. Configure your server connection(s) via the plugin setup wizard (Host IP, Port, and Password).
+## 📦 Installation
 
-## Building from Source
+1. Make sure you have **[Macro Deck 3](https://macro-deck.app/)** installed.
+2. Download the latest `com.multidisplayvcp.client-3.0.0.macroDeckPlugin` from the [Releases](https://github.com/doggdogpack/MultiDisplayVCPClient/releases) tab.
+3. Drag and drop the `.macroDeckPlugin` file into the Macro Deck 3 window (or install it via Macro Deck's Extension Manager).
+4. Run the **[MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer/releases)** on each computer whose displays you want to manage.
+5. In Macro Deck, open the plugin settings and configure your server connection(s) (Host IP, Port, and Password).
 
-Requires [.NET 10.0 SDK](https://dotnet.microsoft.com/) and `macrodeck-plugin` CLI:
+---
+
+## 🗂️ Branches & Compatibility
+
+| Macro Deck Version | Client Plugin Branch | Server Compatibility | Status |
+| :--- | :--- | :--- | :--- |
+| **Macro Deck 3.x** | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) (v3.0.0+) | MultiDisplayVCP Server v2.0+ | **Active (Current)** |
+| **Macro Deck 2.x** | [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) (v2.x) | MultiDisplayVCP Server v1.x | **Legacy (Archived)** |
+
+---
+
+## 🛠️ Building from Source
+
+Requires [.NET 10.0 SDK](https://dotnet.microsoft.com/) and the `macrodeck-plugin` CLI:
 
 ```bash
-dotnet publish -c Release
-```
-
-Or build the universal package:
-```bash
+# Build multi-platform package
 macrodeck-plugin build
 ```
 
-## License
+The output package will be generated at `BuildOut/Client/Packaged/com.multidisplayvcp.client-3.0.0.macroDeckPlugin`.
+
+---
+
+## 📄 License
 
 MIT License. See [LICENSE.txt](LICENSE.txt) for details.
