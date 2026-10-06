@@ -18,7 +18,7 @@
 
     <Authors>DoggoDogPack</Authors>
 
-    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
 
     <PackageId>DoggoDogPack.MultiDisplayVCPClient</PackageId>
 
@@ -41,13 +41,9 @@
 
 
   <ItemGroup>
-
     <Reference Include="Macro Deck 2" Private="false">
-
-      <HintPath>C:\Program Files\Macro Deck\Macro Deck 2.dll</HintPath>
-
+      <HintPath>Libs\Macro Deck 2.dll</HintPath>
     </Reference>
-
   </ItemGroup>
 
 

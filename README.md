@@ -23,7 +23,7 @@
 
 | Branch | Macro Deck Version | Server Compatibility | Status |
 | :--- | :--- | :--- | :--- |
-| [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) | **Macro Deck 2.x** | MultiDisplayVCP Server v1.x | **Archived / Legacy** |
+| [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) | **Macro Deck 2.x** (v2.0.0) | MultiDisplayVCP Server v1.x | **Archived / Legacy** |
 | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) | **Macro Deck 3.x** | MultiDisplayVCP Server v2.0+ (Windows, Linux, macOS) | **Active (Current)** |
 
 ---

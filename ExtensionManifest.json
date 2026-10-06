@@ -1,4 +1,4 @@
-{
+﻿{
 
         "type": "Plugin",
 
@@ -10,7 +10,7 @@
 
         "packageId": "DoggoDogPack.MultiDisplayVCPClient",
 
-        "version": "1.1.0",
+        "version": "2.0.0",
 
         "target-plugin-api-version": 40,
 
