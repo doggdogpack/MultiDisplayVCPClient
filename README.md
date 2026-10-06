@@ -33,10 +33,13 @@ Control your monitors' hardware DDC/CI settings (Brightness, Contrast, Input Sou
 
 ## 🗂️ Branches & Compatibility
 
-| Macro Deck Version | Client Plugin Branch | Server Compatibility | Status |
+> [!NOTE]
+> **Unified Server**: The [MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer) is a single unified application (no split branches). Running **Server v2.0.0+** concurrently supports both Macro Deck 2 and Macro Deck 3 clients across Windows, Linux, and macOS.
+
+| Macro Deck Version | Client Plugin Branch | Supported Server | Status |
 | :--- | :--- | :--- | :--- |
-| **Macro Deck 3.x** | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) (v3.0.0+) | MultiDisplayVCP Server v2.0+ | **Active (Current)** |
-| **Macro Deck 2.x** | [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) (v2.x) | MultiDisplayVCP Server v1.x | **Legacy (Archived)** |
+| **Macro Deck 3.x** | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) (v3.0.0+) | [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) (gRPC / HTTP/2 + TCP) | **Active (Current)** |
+| **Macro Deck 2.x** | [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) (v2.0.0) | [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) (TCP) or v1.x | **Legacy (Archived)** |
 
 ---
 
