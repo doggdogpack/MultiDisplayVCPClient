@@ -1,7 +1,9 @@
 {
   "version": 1,
   "include": [
-    "icon.png"
+    "icon.png",
+    "LICENSE.txt",
+    "README.md"
   ],
   "targets": {
     "win-x64": {

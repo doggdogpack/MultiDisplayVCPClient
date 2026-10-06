@@ -43,5 +43,25 @@
   "license": "MIT",
   "compatibility": {
     "macroDeck": ">=3.0.0-0"
+  },
+  "additionalLinks": [
+    {
+      "type": "documentation",
+      "url": "https://github.com/doggdogpack/MultiDisplayVCPClient#readme"
+    },
+    {
+      "type": "issues",
+      "url": "https://github.com/doggdogpack/MultiDisplayVCPClient/issues"
+    },
+    {
+      "type": "custom",
+      "label": "Companion Server Releases",
+      "url": "https://github.com/doggdogpack/MultiDisplayVCPServer/releases"
+    }
+  ],
+  "ai": {
+    "interaction": false,
+    "generatedContent": false,
+    "generatedAssets": false
   }
 }
