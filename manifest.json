@@ -3,7 +3,7 @@
   "manifestVersion": 1,
   "id": "com.multidisplayvcp.client",
   "name": "Multi-Display VCP Client",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Control monitor VCP settings (brightness, input, etc.) over your local network using Macro Deck.",
   "icon": "icon.png",
   "repository": "https://github.com/doggdogpack/MultiDisplayVCPClient",
