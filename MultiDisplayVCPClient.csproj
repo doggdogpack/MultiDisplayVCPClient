@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>DoggoDogPack</Authors>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <PackageId>DoggoDogPack.MultiDisplayVCPClient</PackageId>
     <RepositoryUrl>https://github.com/doggdogpack/MultiDisplayVCPClient</RepositoryUrl>
     <Product>Multi-Display VCP Client</Product>
