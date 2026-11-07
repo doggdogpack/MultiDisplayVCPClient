@@ -24,7 +24,7 @@ Control your monitors' hardware DDC/CI settings (Brightness, Contrast, Input Sou
 ## 📦 Installation
 
 1. Make sure you have **[Macro Deck 3](https://macro-deck.app/)** installed.
-2. Download the latest `com.multidisplayvcp.client-3.0.0.macroDeckPlugin` from the [Releases](https://github.com/doggdogpack/MultiDisplayVCPClient/releases) tab.
+2. Download the latest `com.multidisplayvcp.client-3.0.1.macroDeckPlugin` from the [Releases](https://github.com/doggdogpack/MultiDisplayVCPClient/releases) tab.
 3. Drag and drop the `.macroDeckPlugin` file into the Macro Deck 3 window (or install it via Macro Deck's Extension Manager).
 4. Run the **[MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer/releases)** on each computer whose displays you want to manage.
 5. In Macro Deck, open the plugin settings and configure your server connection(s) (Host IP, Port, and Password).
@@ -38,7 +38,7 @@ Control your monitors' hardware DDC/CI settings (Brightness, Contrast, Input Sou
 
 | Macro Deck Version | Client Plugin Branch | Supported Server | Status |
 | :--- | :--- | :--- | :--- |
-| **Macro Deck 3.x** | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) (v3.0.0+) | [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) (gRPC / HTTP/2 + TCP) | **Active (Current)** |
+| **Macro Deck 3.x** | [`Macro-Deck-3`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-3) (v3.0.1+) | [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) (gRPC / HTTP/2 + TCP) | **Active (Current)** |
 | **Macro Deck 2.x** | [`Macro-Deck-2`](https://github.com/doggdogpack/MultiDisplayVCPClient/tree/Macro-Deck-2) (v2.0.0) | [MultiDisplayVCP Server v2.0+](https://github.com/doggdogpack/MultiDisplayVCPServer) (TCP) or v1.x | **Legacy (Archived)** |
 
 ---
@@ -52,7 +52,7 @@ Requires [.NET 10.0 SDK](https://dotnet.microsoft.com/) and the `macrodeck-plugi
 macrodeck-plugin build
 ```
 
-The output package will be generated at `BuildOut/Client/Packaged/com.multidisplayvcp.client-3.0.0.macroDeckPlugin`.
+The output package will be generated at `BuildOut/Client/Packaged/com.multidisplayvcp.client-3.0.1.macroDeckPlugin`.
 
 ---
 
