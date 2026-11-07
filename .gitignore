@@ -3,5 +3,3 @@ obj/
 *.user
 .vs/
 *.suo
-*.props
-.github
