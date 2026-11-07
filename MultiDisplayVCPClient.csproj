@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>DoggoDogPack</Authors>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <PackageId>DoggoDogPack.MultiDisplayVCPClient</PackageId>
     <RepositoryUrl>https://github.com/doggdogpack/MultiDisplayVCPClient</RepositoryUrl>
     <Product>Multi-Display VCP Client</Product>
@@ -20,11 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MacroDeck.Plugin.Analyzers" Version="3.0.0" PrivateAssets="all" />
-    <PackageReference Include="MacroDeck.Localization" Version="3.0.0" />
-    <PackageReference Include="MacroDeck.Plugin.Hosting" Version="3.0.0" />
-    <PackageReference Include="MacroDeck.Plugin.Serilog" Version="3.0.0" />
-    <PackageReference Include="MacroDeck.Sdk" Version="3.0.0" />
+    <PackageReference Include="MacroDeck.Plugin.Analyzers" Version="3.0.1" PrivateAssets="all" />
+    <PackageReference Include="MacroDeck.Localization" Version="3.0.1" />
+    <PackageReference Include="MacroDeck.Plugin.Hosting" Version="3.0.1" />
+    <PackageReference Include="MacroDeck.Plugin.Serilog" Version="3.0.1" />
+    <PackageReference Include="MacroDeck.Sdk" Version="3.0.1" />
     <PackageReference Include="MagicOnion.Client" Version="7.11.0" />
     <PackageReference Include="MemoryPack" Version="1.21.4" />
     <PackageReference Include="Grpc.Net.Client" Version="2.85.0" />
