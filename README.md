@@ -1,10 +1,19 @@
 # MultiDisplayVCP Client for Macro Deck 3
+<a href="https://macro-deck.app/store/com.multidisplayvcp.client">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://assets.macro-deck.app/branding/Open%20in%20the%20Macro%20Deck%20Store%20Badge%20Dark.png">
+    <img alt="Open in the Macro Deck Store" src="https://assets.macro-deck.app/branding/Open%20in%20the%20Macro%20Deck%20Store%20Badge%20Light.png" height="56">
+  </picture>
+</a>
 
 Control your monitors' hardware DDC/CI settings (Brightness, Contrast, Input Source, Audio Volume, Power Mode, and more) across your local network directly from [Macro Deck 3](https://macro-deck.app/).
 
 > [!IMPORTANT]
 > **Not a Standalone Application**  
 > This is an extension plugin for **[Macro Deck 3](https://macro-deck.app/)**. It works end-to-end with the **[MultiDisplayVCP Server](https://github.com/doggdogpack/MultiDisplayVCPServer)** (running on any Windows, Linux, or macOS computer on your local network) to query and control monitor/display hardware settings remotely.
+> The connection to the server is not encrypted. However, only display codes are sent between the client and the server. No other information is accessed.
+> Your display must support DDC/CI and the feature must be enabled on the monitor.
+>> MAC Users: I have been informed that AIO displays for Mac do not work. Apples has blocked access to DDC/CI on the AIO display. However, if you have an external display you can still leverage DDC/CI functionality if the external display supports it.
 
 ---
 
